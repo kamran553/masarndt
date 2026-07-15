@@ -96,7 +96,7 @@ export default function Home() {
                     <span className="rivet" />
                   </div>
                   <img
-                    src="/images/refinery-hero.png"
+                    src={`${import.meta.env.BASE_URL}images/refinery-hero.png`}
                     alt="Inspector performing NDT ultrasonic testing on industrial pipe"
                     className="w-full h-72 object-cover rounded-sm border border-steel-200/60 grayscale-[20%] hover:grayscale-0 transition-all duration-500"
                   />

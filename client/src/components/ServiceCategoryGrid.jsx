@@ -6,11 +6,11 @@ import { StaggerGroup, StaggerItem } from './ui/Reveal'
 import IconTile from './ui/IconTile'
 
 const categoryImages = {
-  'conventional-ndt': '/images/service-conventional.png',
-  'advanced-ndt': '/images/service-advanced.png',
-  'asset-integrity': '/images/service-integrity.png',
-  'inspection': '/images/service-inspection.png',
-  'manpower': '/images/service-manpower.png'
+  'conventional-ndt': 'images/service-conventional.png',
+  'advanced-ndt': 'images/service-advanced.png',
+  'asset-integrity': 'images/service-integrity.png',
+  'inspection': 'images/service-inspection.png',
+  'manpower': 'images/service-manpower.png'
 }
 
 export default function ServiceCategoryGrid({ categories }) {
@@ -18,7 +18,7 @@ export default function ServiceCategoryGrid({ categories }) {
     <StaggerGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {categories.map((s) => {
         const Icon = serviceCategoryIcons[s.id]
-        const imagePath = categoryImages[s.id]
+        const imagePath = `${import.meta.env.BASE_URL}${categoryImages[s.id]}`
         
         return (
           <StaggerItem key={s.id}>

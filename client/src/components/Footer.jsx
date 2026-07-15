@@ -24,7 +24,7 @@ export default function Footer() {
           <StaggerItem>
             <div className="flex items-center gap-2 mb-5">
               <img
-                src="/images/logo.png"
+                src={`${import.meta.env.BASE_URL}images/logo.png`}
                 alt="Masar NDT Logo"
                 className="h-12 w-auto object-contain"
               />

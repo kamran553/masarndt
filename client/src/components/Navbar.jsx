@@ -110,7 +110,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16">
         <NavLink to="/" className="flex items-center gap-2 shrink-0 group">
           <img
-            src="/images/logo.png"
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
             alt="Masar NDT Logo"
             className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
           />
