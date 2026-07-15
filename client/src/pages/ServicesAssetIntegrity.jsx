@@ -9,16 +9,16 @@ export default function ServicesAssetIntegrity() {
     <div>
       <PageHero eyebrow={assetIntegrity.tag} title={assetIntegrity.title} description={assetIntegrity.lead} />
 
-      <section className="py-16">
+      <section className="py-20 bg-white/40">
         <Container size="wide">
-          <StaggerGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <StaggerGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {assetIntegrity.services.map((s, idx) => (
               <StaggerItem key={s}>
-                <div className="group bg-paper border border-steel-200 rounded-xl p-5 h-full flex items-start gap-3 hover:border-signal-200 hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
-                  <span className="font-mono text-[10px] text-signal-500 border border-signal-200 rounded-md px-1.5 py-0.5 mt-0.5 shrink-0">
+                <div className="group premium-card p-6 flex items-start gap-4 hover:shadow-card-hover">
+                  <span className="font-mono text-[9px] text-signal-500 bg-signal-50 border border-signal-100 rounded-full w-7 h-7 flex items-center justify-center shrink-0 font-bold">
                     {String(idx + 1).padStart(2, '0')}
                   </span>
-                  <p className="text-ink leading-snug text-sm">{s}</p>
+                  <p className="text-slate-700 leading-relaxed text-sm mt-0.5 font-normal">{s}</p>
                 </div>
               </StaggerItem>
             ))}
@@ -28,9 +28,9 @@ export default function ServicesAssetIntegrity() {
 
       <Container size="default" className="pb-24 text-center">
         <Reveal>
-          <p className="text-steel-500">Building or reviewing your Risk-Based Inspection program?</p>
-          <div className="mt-5 flex justify-center">
-            <Button to="/contact" variant="primary">
+          <p className="text-slate-500">Building or reviewing your Risk-Based Inspection program?</p>
+          <div className="mt-6 flex justify-center">
+            <Button to="/contact" variant="primary" className="rounded-full">
               Speak With Our Engineers
             </Button>
           </div>

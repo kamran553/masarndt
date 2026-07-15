@@ -109,10 +109,11 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16">
         <NavLink to="/" className="flex items-center gap-2 shrink-0 group">
-          <span className="w-2 h-2 rounded-full bg-signal-500 group-hover:scale-125 transition-transform" aria-hidden="true" />
-          <span className="font-display uppercase tracking-widest2 text-ink text-lg">
-            Masar<span className="text-signal-500"> NDT</span>
-          </span>
+          <img
+            src="/images/logo.png"
+            alt="Masar NDT Logo"
+            className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+          />
         </NavLink>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">

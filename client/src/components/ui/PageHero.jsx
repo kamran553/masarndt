@@ -13,23 +13,17 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: EASE } },
 }
 
-/**
- * Shared dark hero header for every inner page (About, Contact, Industries,
- * Resources, all five Service pages). Consolidates eight near-identical
- * blocks into one component with a single visual language: eyebrow tag,
- * display heading, lead paragraph, over a quiet blueprint-grid backdrop.
- */
 export default function PageHero({ eyebrow, title, description, children }) {
   return (
-    <section className="relative bg-gradient-to-br from-white via-paper to-paper-dim border-b border-steel-200/60 text-ink overflow-hidden">
-      <div className="absolute inset-0 bg-grid-lines-dim bg-grid-sm opacity-30 pointer-events-none" aria-hidden="true" />
+    <section className="relative bg-gradient-to-b from-white via-slate-50 to-slate-100/20 border-b border-slate-200/50 text-slate-900 overflow-hidden">
+      <div className="absolute inset-0 bg-grid-lines-dim bg-grid-sm opacity-10 pointer-events-none" aria-hidden="true" />
       <div
         className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-signal-500/5 blur-3xl animate-drift-slow pointer-events-none"
         aria-hidden="true"
       />
       <Container size="default" className="relative">
         <motion.div
-          className="py-20 md:py-28"
+          className="pt-28 pb-20 md:pt-36 md:pb-28"
           initial="hidden"
           animate="show"
           variants={containerVariants}
@@ -40,14 +34,14 @@ export default function PageHero({ eyebrow, title, description, children }) {
             </motion.div>
           )}
           <motion.h1
-            className="font-display uppercase text-4xl md:text-5xl leading-tight mt-4 text-ink"
+            className="font-display uppercase text-4xl md:text-5xl leading-tight mt-4 text-slate-900 font-medium tracking-wide"
             variants={itemVariants}
           >
             {title}
           </motion.h1>
           {description && (
             <motion.p
-              className="mt-6 max-w-2xl text-steel-600 text-lg leading-relaxed"
+              className="mt-6 max-w-2xl text-slate-600 text-lg leading-relaxed font-normal"
               variants={itemVariants}
             >
               {description}

@@ -166,3 +166,9 @@ select:focus-visible,
     display: none;
   }
 }
+
+/* Section divider with gradient fade */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(14, 20, 32, 0.08) 50%, transparent);
+}

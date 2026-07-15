@@ -67,6 +67,11 @@ export default {
           'linear-gradient(rgba(250,248,242,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(250,248,242,0.08) 1px, transparent 1px)',
         'grid-lines-dim':
           'linear-gradient(rgba(11,15,23,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(11,15,23,0.05) 1px, transparent 1px)',
+        // Premium hero gradient meshes
+        'hero-mesh':
+          'radial-gradient(ellipse 80% 60% at 20% 40%, rgba(211,64,31,0.12) 0%, transparent 70%), radial-gradient(ellipse 60% 50% at 80% 20%, rgba(27,36,50,0.8) 0%, transparent 70%)',
+        'hero-radial':
+          'radial-gradient(ellipse 50% 80% at 50% 0%, rgba(211,64,31,0.08) 0%, transparent 60%)',
       },
       backgroundSize: {
         'grid-sm': '32px 32px',
@@ -81,6 +86,10 @@ export default {
         elevated: '0 4px 16px rgba(11,15,23,0.06), 0 24px 48px -16px rgba(11,15,23,0.20)',
         'glow-signal': '0 0 0 1px rgba(211,64,31,0.15), 0 12px 32px -8px rgba(211,64,31,0.35)',
         'inner-line': 'inset 0 1px 0 0 rgba(250,248,242,0.06)',
+        // Premium glass & card shadows
+        glass: '0 8px 32px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.05)',
+        'card-hover': '0 8px 30px -6px rgba(211,64,31,0.18), 0 20px 50px -12px rgba(11,15,23,0.25)',
+        'glow-soft': '0 0 60px -12px rgba(211,64,31,0.25)',
       },
       keyframes: {
         scan: {
@@ -99,12 +108,17 @@ export default {
           '0%, 100%': { transform: 'translate(0px, 0px)' },
           '50%': { transform: 'translate(-18px, 22px)' },
         },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       },
       animation: {
         scan: 'scan 4s ease-in-out infinite',
         'pulse-soft': 'pulse-soft 4.5s ease-in-out infinite',
         drift: 'drift 14s ease-in-out infinite',
         'drift-slow': 'drift-slow 18s ease-in-out infinite',
+        shimmer: 'shimmer 3s ease-in-out infinite',
       },
     },
   },

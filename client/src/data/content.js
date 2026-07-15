@@ -99,6 +99,54 @@ export const inspection = {
     'Our solutions are designed to meet your precise requirements for reliability, timeliness and cost-efficiency. No matter what integrity challenge you face, you can rely on Masar NDT to have the engineers, inspectors, field technicians, trade people and technology to get the job done right.',
     'Whatever your challenge, we have the answer — in difficult access locations, large industrial sites, Upstream, Downstream, Midstream, Marine, Energy & Power, laboratories, plants and factories. Wherever you need us.',
   ],
+  servicesList: [
+    'Second Party Inspection',
+    'Third Party Inspection',
+    'Expediting',
+    'Audit & Compliance Reviews',
+    'Vendor / Source Inspection',
+    'Quantity Survey',
+    'Pre-Shipment Inspection',
+    'Quality Assurance & Control',
+    'Lab Test Witness and Inspection',
+    'NDT Inspector (ASNT, PCN and ISO)',
+    'EPC and Turnkey Project Inspection',
+    'Shutdown / Turnaround Inspection',
+    'In-Service Inspection',
+    'Fuel Tanker and Truck Inspection',
+    'ISO Inspector and Auditor',
+    'RTFI (Radiographic Testing Film Interpretation)'
+  ],
+  approvedCategories: [
+    {
+      group: 'Client Approvals & Accreditations',
+      items: [
+        'ARAMCO (PID, VID, QM approved)',
+        'SABIC',
+        'ADNOC',
+        'ORPIC',
+        'FLUOR & Chevron',
+        'ISO 9001, 9712, 22000, etc.'
+      ]
+    },
+    {
+      group: 'Inspector Certifications',
+      items: [
+        'API Certified (API-510, API-570, API-653, API-580, API-571, API-936, API-982, API-1169, API-1104, Q1, Q2, etc.)',
+        'Painting / Coating: NACE, BGAS, AMPP & FROSIO',
+        'Welding Inspection: CSWIP, AWS and CWI'
+      ]
+    },
+    {
+      group: 'Technical & Craft Disciplines',
+      items: [
+        'Electrical & Instrumentation (E&I) & CompEx',
+        'Scaffolding & Structural Inspection',
+        'Material & HVAC Systems',
+        'Bridge & Tunnel, Static, Piping, Fittings, Structure, Pipeline, Tank, Rotary, Cargo, Container, Lifting equipment, etc.'
+      ]
+    }
+  ],
   highlight: {
     title: 'Specialized in Shutdown & Turnaround Inspection and Planning',
     body: [
@@ -372,6 +420,28 @@ export const manpower = {
     'Construction and Manufacturing',
     'Technical Staffing',
   ],
+  training: [
+    {
+      category: 'NDT Level & Technical QA/QC Training',
+      courses: [
+        'NDT Level Certification Courses (RT, PT, UT, MT)',
+        'QC Engineer Specialized Training',
+        'Shutdown / Turnaround QC Preparation',
+        'Inspection & Quality Control Engineer Courses'
+      ]
+    },
+    {
+      category: 'API Exam Preparation & Certifications',
+      courses: [
+        'API 510 — Pressure Vessel Inspector',
+        'API 570 — Piping Inspector',
+        'API 653 — Aboveground Storage Tank Inspector',
+        'API 580 — Risk Based Inspection',
+        'API 571 — Damage Mechanisms Identification',
+        'API 936 — Refractory Personnel Certification'
+      ]
+    }
+  ]
 }
 
 // ---------------- INDUSTRIES WE SERVE ----------------

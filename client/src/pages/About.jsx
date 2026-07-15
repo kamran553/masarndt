@@ -22,40 +22,43 @@ export default function About() {
       <Container size="default" className="py-20 space-y-6">
         {company.about.map((p, idx) => (
           <Reveal key={p} delay={idx * 0.06}>
-            <p className="text-steel-600 leading-relaxed text-lg">{p}</p>
+            <p className="text-slate-600 leading-relaxed text-lg font-normal">{p}</p>
           </Reveal>
         ))}
       </Container>
 
-      <section className="bg-steel-50 border-y border-steel-200/60 text-ink">
-        <Container size="default" className="py-16 grid sm:grid-cols-2 gap-8">
+      <section className="bg-slate-50 border-y border-slate-200/50 relative py-20">
+        <div className="absolute inset-0 bg-grid-lines-dim bg-grid-sm opacity-10 pointer-events-none" aria-hidden="true" />
+        <Container size="default" className="relative grid sm:grid-cols-2 gap-8">
           <Reveal>
-            <div className="nameplate crop-corners bg-white p-8 h-full" data-tag="MISSION">
-              <p className="mt-2 text-steel-600 leading-relaxed">{company.mission}</p>
+            <div className="premium-card p-8 h-full bg-white">
+              <p className="font-mono text-[9px] tracking-widest2 text-signal-600 uppercase font-bold mb-3">MISSION</p>
+              <p className="text-slate-600 leading-relaxed font-normal">{company.mission}</p>
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="nameplate crop-corners bg-white p-8 h-full" data-tag="VISION">
-              <p className="mt-2 text-steel-600 leading-relaxed">{company.vision}</p>
+            <div className="premium-card p-8 h-full bg-white">
+              <p className="font-mono text-[9px] tracking-widest2 text-signal-600 uppercase font-bold mb-3">VISION</p>
+              <p className="text-slate-600 leading-relaxed font-normal">{company.vision}</p>
             </div>
           </Reveal>
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-24 md:py-32 bg-white">
         <Container size="wide">
           <SectionHeader tag="BY THE NUMBERS" title="A workforce built for scale" />
-          <StaggerGroup className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-5">
+          <StaggerGroup className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s) => {
               const Icon = statIcons[s.label] || defaultStatIcon
               return (
                 <StaggerItem key={s.label}>
-                  <div className="bg-paper border border-steel-200 rounded-2xl p-8 text-center h-full hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
+                  <div className="premium-card p-8 text-center h-full hover:shadow-card-hover">
                     <Icon className="w-6 h-6 text-signal-500 mx-auto" strokeWidth={1.75} aria-hidden="true" />
-                    <p className="font-display text-3xl text-ink mt-3">
+                    <p className="font-display text-3xl text-slate-900 mt-4 font-semibold">
                       <AnimatedCounter value={s.value} />
                     </p>
-                    <p className="text-xs text-steel-500 mt-2 leading-snug">{s.label}</p>
+                    <p className="text-xs text-slate-500 mt-2 font-medium uppercase tracking-wider">{s.label}</p>
                   </div>
                 </StaggerItem>
               )
@@ -64,12 +67,12 @@ export default function About() {
         </Container>
       </section>
 
-      <Container size="default" className="pb-24">
+      <Container size="default" className="pb-28 bg-white">
         <SectionHeader tag="CERTIFICATIONS" title="Accredited to the standards our clients trust" />
         <StaggerGroup className="mt-8 flex flex-wrap gap-3">
           {certifications.map((c) => (
             <StaggerItem key={c}>
-              <Badge icon={certificationIcon} tone="signal" className="font-mono">
+              <Badge icon={certificationIcon} tone="signal" className="font-mono rounded-full px-4 py-2">
                 {c}
               </Badge>
             </StaggerItem>

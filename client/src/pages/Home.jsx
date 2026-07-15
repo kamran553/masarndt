@@ -10,6 +10,7 @@ import AnimatedCounter from '../components/ui/AnimatedCounter'
 import { Reveal, StaggerGroup, StaggerItem } from '../components/ui/Reveal'
 import { company, stats, serviceCategories, industries } from '../data/content'
 import { statIcons, defaultStatIcon, industryIcons, defaultIndustryIcon } from '../lib/icons'
+import { RefineryHeroIllustration } from '../components/IndustrialIllustrations'
 
 const EASE = [0.16, 1, 0.3, 1]
 const heroContainer = {
@@ -39,42 +40,69 @@ export default function Home() {
 
         <Container size="wide" className="relative">
           <motion.div
-            className="pt-24 pb-24 md:pt-32 md:pb-32"
+            className="pt-20 pb-20 md:pt-24 md:pb-24"
             initial="hidden"
             animate="show"
             variants={heroContainer}
           >
-            <motion.div
-              variants={heroItem}
-              className="inline-flex items-center gap-2 rounded-full border border-steel-200 bg-white/70 shadow-sm pl-2 pr-4 py-1.5 backdrop-blur-sm mb-7"
-            >
-              <span className="w-5 h-5 rounded-full bg-signal-50 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-3 h-3 text-signal-600" aria-hidden="true" />
-              </span>
-              <span className="font-mono text-[11px] tracking-widest2 text-steel-600 font-medium">
-                ISO 9001:2015 CERTIFIED INSPECTION ORGANISATION
-              </span>
-            </motion.div>
+            <div className="grid lg:grid-cols-12 gap-12 items-center">
+              {/* Hero details left */}
+              <div className="lg:col-span-7">
+                <motion.div
+                  variants={heroItem}
+                  className="inline-flex items-center gap-2 rounded-full border border-steel-200 bg-white/70 shadow-sm pl-2 pr-4 py-1.5 backdrop-blur-sm mb-7"
+                >
+                  <span className="w-5 h-5 rounded-full bg-signal-50 flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-3 h-3 text-signal-600" aria-hidden="true" />
+                  </span>
+                  <span className="font-mono text-[11px] tracking-widest2 text-steel-600 font-medium">
+                    ISO 9001:2015 CERTIFIED INSPECTION ORGANISATION
+                  </span>
+                </motion.div>
 
-            <motion.h1
-              variants={heroItem}
-              className="font-display uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight max-w-4xl text-ink"
-            >
-              Every flaw found. <span className="text-signal-500">Every asset accounted for.</span>
-            </motion.h1>
+                <motion.h1
+                  variants={heroItem}
+                  className="font-display uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-ink"
+                >
+                  Every flaw found. <span className="text-signal-500">Every asset accounted for.</span>
+                </motion.h1>
 
-            <motion.p variants={heroItem} className="mt-7 max-w-xl text-steel-600 text-lg leading-relaxed">
-              {company.intro}
-            </motion.p>
+                <motion.p variants={heroItem} className="mt-7 max-w-xl text-steel-600 text-lg leading-relaxed">
+                  {company.intro}
+                </motion.p>
 
-            <motion.div variants={heroItem} className="mt-10 flex flex-wrap gap-4">
-              <Button to="/contact" variant="primary" size="lg">
-                Request an Inspection
-              </Button>
-              <Button to="/services/conventional-ndt" variant="outline-dark" size="lg">
-                Explore Our Services
-              </Button>
-            </motion.div>
+                <motion.div variants={heroItem} className="mt-10 flex flex-wrap gap-4">
+                  <Button to="/contact" variant="primary" size="lg">
+                    Request an Inspection
+                  </Button>
+                  <Button to="/services/conventional-ndt" variant="outline-dark" size="lg">
+                    Explore Our Services
+                  </Button>
+                </motion.div>
+              </div>
+
+              {/* Refinery Field Image right */}
+              <motion.div
+                variants={heroItem}
+                className="lg:col-span-5 hidden lg:block"
+              >
+                <div className="nameplate crop-corners bg-white p-2.5" data-tag="FIELD IMAGE">
+                  <div className="absolute top-4 right-4 flex gap-1.5 z-10">
+                    <span className="rivet" />
+                    <span className="rivet" />
+                  </div>
+                  <div className="absolute bottom-4 left-4 flex gap-1.5 z-10">
+                    <span className="rivet" />
+                    <span className="rivet" />
+                  </div>
+                  <img
+                    src="/images/refinery-hero.png"
+                    alt="Inspector performing NDT ultrasonic testing on industrial pipe"
+                    className="w-full h-72 object-cover rounded-sm border border-steel-200/60 grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         </Container>
 
@@ -161,15 +189,17 @@ export default function Home() {
             title="Industries We Serve"
             description="Masar NDT supports asset owners and EPC contractors across more than 30 sectors — wherever integrity, safety and uptime matter."
           />
-          <StaggerGroup className="mt-10 flex flex-wrap gap-3">
-            {industries.slice(0, 16).map((i) => {
+          <StaggerGroup className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {industries.slice(0, 12).map((i) => {
               const Icon = industryIcons[i] || defaultIndustryIcon
               return (
                 <StaggerItem key={i}>
-                  <span className="inline-flex items-center gap-2 text-sm border border-steel-200 rounded-full px-4 py-2 text-steel-600 bg-paper hover:border-signal-300 hover:text-ink transition-colors">
-                    <Icon className="w-4 h-4 text-signal-500" strokeWidth={1.75} aria-hidden="true" />
-                    {i}
-                  </span>
+                  <div className="flex items-center gap-2 border border-steel-200/80 rounded-lg p-2.5 text-steel-700 bg-white hover:border-signal-400 hover:text-ink hover:shadow-sm transition-all duration-200 h-full">
+                    <span className="w-7 h-7 rounded-md bg-signal-50 text-signal-600 flex items-center justify-center shrink-0">
+                      <Icon className="w-4 h-4" strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                    <span className="text-xs md:text-sm font-medium leading-tight">{i}</span>
+                  </div>
                 </StaggerItem>
               )
             })}
