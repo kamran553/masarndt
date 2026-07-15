@@ -100,7 +100,7 @@ export default function Footer() {
       <div className="border-t border-slate-200/50">
         <Container size="wide">
           <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-            <span>&copy; {new Date().getFullYear()} Masar NDT — AKMEC Group. All rights reserved.</span>
+            <span>&copy; {new Date().getFullYear()} Masar NDT — Masar NDTS Company LLC. All rights reserved.</span>
             <div className="flex items-center gap-6">
               <span className="font-mono tracking-wider">ISO 9001:2015 CERTIFIED</span>
               <motion.button

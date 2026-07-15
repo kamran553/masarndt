@@ -1,19 +1,19 @@
-// Centralized site copy, sourced from AKMEC GROUP / Masar NDT reference documents.
+// Centralized site copy, sourced from Masar NDTS Company LLC / Masar NDT reference documents.
 // Edit this file to update text across the whole site.
 
 export const company = {
   name: 'Masar NDT',
-  legalName: 'AKMEC Group',
+  legalName: 'Masar NDTS Company LLC',
   tagline: 'Inspection. Integrity. Assurance.',
   intro:
-    'Masar NDT (AKMEC Group) is an ISO 9001:2015 certified inspection, NDT and asset-integrity engineering organisation, delivering accurate, first-time-right results across the Kingdom of Saudi Arabia and India.',
+    'Masar NDT (Masar NDTS Company LLC) is an ISO 9001:2015 certified inspection, NDT and asset-integrity engineering organisation, delivering accurate, first-time-right results across the Kingdom of Saudi Arabia and India.',
   mission:
     'We strive to render services reflective of our efficiency and are committed to providing superior quality and results.',
   vision:
     'We aim to provide our clients with outstanding service, value, and quality — through total commitment to exceeding client expectations, personal attention, dedication, and hard work.',
   about: [
-    'AKMEC GROUP is an ISO 9001:2015 certified company and a trusted name for vigorous, sustainable, and tailored facilities-management and technical services to public and private organisations, creating value through expertise since 2021.',
-    'AKMEC is a leader in Inspection, NDT, Advanced NDT, Trading, Filtration Systems, Construction and Facility Management, translating professionalism and excellence into every engagement.',
+    'Masar NDTS Company LLC is an ISO 9001:2015 certified company and a trusted name for vigorous, sustainable, and tailored facilities-management and technical services to public and private organisations, creating value through expertise since 2021.',
+    'Masar NDTS Company LLC is a leader in Inspection, NDT, Advanced NDT, Trading, Filtration Systems, Construction and Facility Management, translating professionalism and excellence into every engagement.',
     'Whatever the challenge — difficult access locations, large industrial sites, Upstream, Downstream, Midstream, Marine, Energy & Power, laboratories, plants and factories — Masar NDT brings the engineers, inspectors, field technicians, trade professionals and technology to get the job done right.',
   ],
 }
@@ -25,13 +25,13 @@ export const offices = [
       'Building No. 4258, Al Safat District,',
       'Al Jubail – 35514, Kingdom of Saudi Arabia',
     ],
-    mobile: '+966 57 103 3252',
+    mobile: '+966 50 049 6073',
     email: 'sales@masarndt.com',
     website: 'www.masarndt.com',
   },
   {
     label: 'India Office',
-    lines: ['AKMEC Group'],
+    lines: ['Masar NDTS Company LLC'],
     mobile: null,
     email: 'inquiry@akmecgroup.com',
     website: 'www.akmecgroup.com',
@@ -94,7 +94,7 @@ export const inspection = {
   title: 'Inspection & Audit',
   tag: 'SEC. 01 — INSPECTION',
   lead:
-    'AKMEC is an ISO 9001:2015 approved certified inspection organisation. We deliver accurate, reliable results the first time, every time — improving productivity, saving time and lowering costs.',
+    'Masar NDTS Company LLC is an ISO 9001:2015 approved certified inspection organisation. We deliver accurate, reliable results the first time, every time — improving productivity, saving time and lowering costs.',
   body: [
     'Our solutions are designed to meet your precise requirements for reliability, timeliness and cost-efficiency. No matter what integrity challenge you face, you can rely on Masar NDT to have the engineers, inspectors, field technicians, trade people and technology to get the job done right.',
     'Whatever your challenge, we have the answer — in difficult access locations, large industrial sites, Upstream, Downstream, Midstream, Marine, Energy & Power, laboratories, plants and factories. Wherever you need us.',
@@ -150,7 +150,7 @@ export const inspection = {
   highlight: {
     title: 'Specialized in Shutdown & Turnaround Inspection and Planning',
     body: [
-      'AKMEC allows a "one-stop shop" for the client, reducing cost and time spent acquiring outside resources.',
+      'Masar NDTS Company LLC allows a "one-stop shop" for the client, reducing cost and time spent acquiring outside resources.',
       'Planning the turnaround is one of the most important steps toward a successful turnaround. Our experienced team of inspectors and planners assists clients at the planning stage, and we staff all inspection crafts necessary to plan any size turnaround.',
       'The final and major step for any successful turnaround is the post-turnaround work and documentation. Masar NDT ensures all inspection activities are properly updated and documented per API, ASME PCC and/or client-specific standards and guidelines — including Pre-Startup Audits, updating existing mechanical-integrity programs, and participating in post-turnaround reviews.',
     ],
@@ -375,7 +375,7 @@ export const assetIntegrity = {
   title: 'Asset Integrity Engineering',
   tag: 'SEC. 04 — ENGINEERING CONSULTANCY',
   lead:
-    'AKMEC GROUP offers engineering and technical consultancy to customers, industries, manufacturers and cross-country businesses trading products internationally.',
+    'Masar NDTS Company LLC offers engineering and technical consultancy to customers, industries, manufacturers and cross-country businesses trading products internationally.',
   services: [
     'Corrosion Loop Development and Marking',
     'Damage Mechanisms Identification',
@@ -403,10 +403,10 @@ export const manpower = {
   title: 'Manpower & Outsourcing',
   tag: 'SEC. 05 — HUMAN RESOURCES',
   lead:
-    'AKMEC HR provides qualified, well-trained manpower supporting commercial, industrial, technical and domestic-sector activities for both public and private clients.',
+    'Masar NDTS Company LLC provides qualified, well-trained manpower supporting commercial, industrial, technical and domestic-sector activities for both public and private clients.',
   body: [
     'We provide well-trained, qualified candidates of various professions and nationalities for all customer requirements, and can mobilize large manpower for shutdown / turnaround assignments ranging from 15 days to several months.',
-    'AKMEC maintains an in-house database of more than 90,000 resumes and a strong referral programme to attract talent from the industry. Our recruiters are trained to identify candidates who meet your exact project requirements — technical, non-technical, highly skilled, skilled and non-skilled.',
+    'Masar NDTS Company LLC maintains an in-house database of more than 90,000 resumes and a strong referral programme to attract talent from the industry. Our recruiters are trained to identify candidates who meet your exact project requirements — technical, non-technical, highly skilled, skilled and non-skilled.',
     'Manpower is supplied on client payroll and works at the client\u2019s location across the sectors listed in Industries We Serve, and more.',
   ],
   disciplines: [

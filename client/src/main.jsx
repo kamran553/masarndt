@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         app automatically respect the OS-level prefers-reduced-motion
         setting, without each component needing to check for it. */}
     <MotionConfig reducedMotion="user">
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
       </BrowserRouter>
     </MotionConfig>
